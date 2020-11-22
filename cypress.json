@@ -1,1 +1,17 @@
-{}
+{
+	"fixturesFolder": "tests/cypress/fixtures",
+  "integrationFolder": "tests/cypress/integration",
+  "pluginsFile": "tests/cypress/plugins/index.js",
+  "screenshotsFolder": "tests/cypress/screenshots",
+  "videosFolder": "tests/cypress/videos",
+  "supportFile": "tests/cypress/support/index.js",
+    "baseUrl": "http://localhost:3000",
+    "reporter": "mochawsome",
+	"reporterOptions": {
+		"reportDir": "./tests/cypress/report/reports",
+		"overwrite": true,
+		"html": true,
+		"json": true,
+		"timestamp": "mmddyyyy_HHMMss"
+	}
+}

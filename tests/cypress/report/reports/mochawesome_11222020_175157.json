@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-11-22T16:51:56.662Z",
+    "end": "2020-11-22T16:51:57.790Z",
+    "duration": 1128,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2857bb81-1493-47fa-8e23-e97c4caa446b",
+      "title": "",
+      "fullFile": "tests/cypress/integration/clients/create-client.spec.js",
+      "file": "tests/cypress/integration/clients/create-client.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a54726ff-b86b-484b-b293-db2c89e44fd8",
+          "title": "Create client",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Create client",
+              "fullTitle": "Create client Create client",
+              "timedOut": null,
+              "duration": 577,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.createClient(name_val, email_val, tel_val);",
+              "err": {},
+              "uuid": "8241f2e8-20c1-4147-8d1e-cf5a0cfe042d",
+              "parentUUID": "a54726ff-b86b-484b-b293-db2c89e44fd8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Client was created",
+              "fullTitle": "Create client Client was created",
+              "timedOut": null,
+              "duration": 535,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.getClient();",
+              "err": {},
+              "uuid": "ae14f43c-0f84-4aa5-bd37-ee05ed6e73c8",
+              "parentUUID": "a54726ff-b86b-484b-b293-db2c89e44fd8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8241f2e8-20c1-4147-8d1e-cf5a0cfe042d",
+            "ae14f43c-0f84-4aa5-bd37-ee05ed6e73c8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1112,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "./tests/cypress/report/reports",
+        "overwrite": true,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "5.1.0"
+    }
+  }
+}

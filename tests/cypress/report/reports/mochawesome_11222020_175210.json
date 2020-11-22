@@ -1,0 +1,144 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-11-22T16:52:09.159Z",
+    "end": "2020-11-22T16:52:10.808Z",
+    "duration": 1649,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3bfbd4f0-dcde-4806-ad0d-52c7a125f1b9",
+      "title": "",
+      "fullFile": "tests/cypress/integration/rooms/delete-room.spec.js",
+      "file": "tests/cypress/integration/rooms/delete-room.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6dda92a9-1f3d-4ffd-a5cb-c2202b46f43f",
+          "title": "Delete room - Api",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "create room",
+              "fullTitle": "Delete room - Api create room",
+              "timedOut": null,
+              "duration": 560,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.createRoom(feat_val, cat_val, num_val, floor_val, available_val, price_val);",
+              "err": {},
+              "uuid": "d0a20853-38c4-4f87-9aaf-b9bb16d3fdd6",
+              "parentUUID": "6dda92a9-1f3d-4ffd-a5cb-c2202b46f43f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "room is created",
+              "fullTitle": "Delete room - Api room is created",
+              "timedOut": null,
+              "duration": 541,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.getRoom();",
+              "err": {},
+              "uuid": "1c989207-c611-42f2-9bf7-560cd1aadc9d",
+              "parentUUID": "6dda92a9-1f3d-4ffd-a5cb-c2202b46f43f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Delete room",
+              "fullTitle": "Delete room - Api Delete room",
+              "timedOut": null,
+              "duration": 528,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.deleteRoom();",
+              "err": {},
+              "uuid": "0a6e167b-2d1b-495f-937c-08a5f91c64fe",
+              "parentUUID": "6dda92a9-1f3d-4ffd-a5cb-c2202b46f43f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d0a20853-38c4-4f87-9aaf-b9bb16d3fdd6",
+            "1c989207-c611-42f2-9bf7-560cd1aadc9d",
+            "0a6e167b-2d1b-495f-937c-08a5f91c64fe"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1629,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "./tests/cypress/report/reports",
+        "overwrite": true,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "5.1.0"
+    }
+  }
+}

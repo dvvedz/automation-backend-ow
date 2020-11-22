@@ -7,7 +7,12 @@
 		"build": "vue-cli-service build",
 		"lint": "vue-cli-service lint",
 		"dev": "nodemon index.js",
-		"start": "node index.js"
+		"start": "node index.js",
+		"cy:run": "npx cypress open",
+		"cy:report-run": "npx cypress run --reporter mochawesome",
+		"cy:report-merge": "npx mochawesome-merge './tests/cypress/report/reports/*.json' -o ./tests/cypress/report/final-report.json",
+		"cy:report-generate": "npx marge ./tests/cypress/report/final-report.json -o ./tests/cypress/report/final-report",
+		"cy:report-auto": "npx cypress run --reporter mochawesome && npx mochawesome-merge './tests/cypress/report/reports/*.json' -o ./tests/cypress/report/final-report.json && npx marge ./tests/cypress/report/final-report.json -o ./tests/cypress/report/final-report"
 	},
 	"dependencies": {
 		"body-parser": "^1.19.0",

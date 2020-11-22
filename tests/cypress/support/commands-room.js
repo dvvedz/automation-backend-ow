@@ -1,7 +1,4 @@
-beforeEach(() => { 
-    // Login before every test, to reset state of app
-    cy.login()
-});
+
 
 // Login
 Cypress.Commands.add("login", () => {
@@ -48,7 +45,7 @@ Cypress.Commands.add("getRoom", (roomId=Cypress.env("createdRoomId")) => {
             "X-User-Auth": `${JSON.stringify(Cypress.env("loginToken"))}`,
             "Content-Type": "application/json"
         }
-    }).its("status").should("eq", 200)
+    });
 });
 
 // Edit room
@@ -72,6 +69,7 @@ Cypress.Commands.add("editRoom", (feat_val, cat_val, num_val, floor_val, availab
         }
     }).then((res) => {
         cy.log(JSON.stringify(res.body))
+        Cypress.env({"editPayload": JSON.stringify(res.body)})
     }) 
 });
 
@@ -84,7 +82,8 @@ Cypress.Commands.add("deleteRoom", (roomId=Cypress.env("createdRoomId")) => {
             "X-User-Auth": JSON.stringify(Cypress.env("loginToken")),
             "Content-Type": "application/json"
         }
+    }).then((res) => {
+        expect(res.body.ok).to.equal(true)
+        cy.log(res.body)
     })
 });
-
-;

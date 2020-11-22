@@ -13,6 +13,6 @@ describe("Create room - api", () => {
     });
 
     it("Room was created", () => {
-        cy.getRoom()
+        cy.getRoom().its("status").should("eq", 200)
     });
 });

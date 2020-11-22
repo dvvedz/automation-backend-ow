@@ -5,7 +5,7 @@ describe("Create client", () => {
     const email_val = faker.internet.email();
     const tel_val = faker.phone.phoneNumber();
 
-    it("Creates a new room", () => {
+    it("Create client", () => {
         cy.createClient(name_val, email_val, tel_val);
     })
     it("Client was created", () => {

@@ -17,5 +17,9 @@
 import './commands-room'
 import './commands-clients'
 
+beforeEach(() => { 
+    // Login before every test, to reset state of app
+    cy.login()
+});
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
